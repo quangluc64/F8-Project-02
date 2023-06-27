@@ -41,16 +41,16 @@ a {
     font-weight: 700;
     letter-spacing: -0.02em;
 }
-.break-all{
+.break-all {
     word-break: break-all;
 }
-.line-clamp{
+.line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-.line-clamp.line-2{
+.line-clamp.line-2 {
     --line-clamp: 2;
 }
 /* ===== CSS ===== */
@@ -292,7 +292,7 @@ a {
     background: #fff;
 }
 /* Thiếu Hover */
-.course-item:hover{
+.course-item:hover {
     border-color: transparent;
     box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
 }
@@ -353,4 +353,71 @@ a {
 .popular .course-item .book-btn:hover {
     color: #fff;
     background: var(--primary-color);
+}
+
+/* === Feedback === */
+.feedback {
+    margin-top: 135px;
+    background-color: #2e2100;
+    padding: 96px 0;
+}
+.feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+.feedback .feedback-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    justify-content: space-between;
+}
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+}
+.feedback-item .title {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-size: 2.4rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    line-height: 1.42;
+}
+.feedback-item .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+.feedback-item .dot {
+    margin-right: 6px;
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #634700;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.feedback-item .dot.active {
+    background-color: var(--primary-color);
+    cursor: default;
+}
+/* Right */
+.feedback-item .content {
+    width: 770px;
+}
+.feedback-item blockquote {
+    margin-left: 30px;
+    /* padding-left: 30px; */
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    line-height: 1.54;
 }
