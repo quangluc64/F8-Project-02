@@ -181,7 +181,7 @@ a {
 }
 .heading.lv2 {
     font-size: 3.8rem;
-    font-weight: 1.26;
+    line-height: 1.26;
 }
 .content-block .desc {
     margin-top: 22px;
@@ -420,4 +420,61 @@ a {
     font-size: 2.6rem;
     font-style: italic;
     line-height: 1.54;
+}
+
+/* === Features === */
+.features {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+.features .content {
+    width: 41%;
+    /* padding-top: 58px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.features .images{
+    display: flex;
+    gap: 0 30px;
+    flex-direction: row;
+}
+.features img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.features .images img.lower {
+    margin-top: 34px;
+}
+.features .content .desc {
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+.features .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background-color: var(--primary-color);
+}
+/* === Features-2nd === */
+.features-2nd {
+    margin-top: 70px;
+}
+.features-2nd .body {
+    flex-direction: row-reverse;
+}
+.features-2nd .images img{
+    width: 470px;
+    height: 440px;
+}
+.features-2nd .content {
+    width: 49%;
 }
