@@ -16,7 +16,7 @@ body {
 /* === Common === */
 .main-content {
     width: 1170px;
-    max-width: calc(100vw - 48px);
+    max-width: calc(100% - 48px);
     margin-left: auto;
     margin-right: auto;
 }
@@ -582,4 +582,87 @@ a {
 }
 .blog .dot.active {
     background-color: var(--primary-color);
+}
+
+/* === Footer === */
+.footer {
+    padding: 96px 135px 0px;
+    background: #2e2100;
+}
+.footer .row {
+    display: flex;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #59554b;
+}
+/* column-1 */
+.footer .column:first-child {
+    width: 35%;
+}
+.footer .column:first-child .desc {
+    margin: 18px 0;
+    max-width: 267px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+.footer .social img {
+    margin-right: 18px;
+}
+/* common */
+.footer .title {
+    position: relative;
+    padding-bottom: 14px;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+/* Không có border-radius => Sử dụng border-bottom 
+rồi cho display:inline-block; rồi setting padding */
+.footer .title::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 130px;
+    height: 1px;
+    background-color: #59554b;
+}
+.footer .list {
+    margin-top: 28px;
+}
+.footer .list li + li {
+    margin-top: 12px;
+}
+footer .list a {
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.86;
+}
+.footer .list strong {
+    font-weight: 600;
+    color: #fff;
+}
+/* column-2 */
+.footer .column:nth-child(2) {
+    width: 21.6%;
+}
+/* column-3 */
+.footer .column:nth-child(3) {
+    width: 21.6%;
+}
+/* column-4 */
+.footer .column:last-child {
+    width: 21.6%;
+}
+
+.footer .coppyright {
+    padding: 28px 0;
+}
+.footer .coppyright p {
+    text-align: center;
+    color: #807d74;
+    font-size: 1.4rem;
+    line-height: 1.86;
 }
